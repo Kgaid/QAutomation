@@ -1,6 +1,6 @@
 class Human:
-    default_name = 'Unknown'
-    default_age: int = int(30)
+    default_name: str = 'Unknown'
+    default_age: int = 30
 
     def __init__(self, name: str = default_name, age: int = default_age):
         self.name = name
@@ -51,7 +51,7 @@ class SmallHouse(House):
 
 alice = Human(name="Alice", age=38)
 alice.info()
-appartment = SmallHouse()
-alice.buy_house(appartment, discount=10000)
+apartment = SmallHouse()
+alice.buy_house(apartment, discount=10000)
 alice.earn_money(99000)
-alice.buy_house(appartment, discount=5000)
+alice.buy_house(apartment, discount=5000)
